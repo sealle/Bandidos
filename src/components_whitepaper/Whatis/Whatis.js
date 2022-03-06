@@ -3,11 +3,14 @@ import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 
 export const What = styled.div`
-  background: linear-gradient(
+  /*background: linear-gradient(
     90deg,
     rgb(28, 27, 27, 0.8) 0%,
     rgb(26, 23, 23, 0.8) 100%
-  );
+  );*/
+  background: black;
+  border-style: solid;
+  border-right: #ffffff;
   height: 100%;
   width: 350px;
   display: flex;
@@ -34,6 +37,7 @@ export const WhatisContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   max-width: 350px;
 `;
 
@@ -64,12 +68,11 @@ export const MobileIcon = styled.div`
 
 export const WhatisMenu = styled.ul`
   height: 100%;
+  width: 100%;
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 160px;
-  justify-content: end;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
   float: right;
 
   @media screen and (max-width: 768px) {
@@ -78,7 +81,14 @@ export const WhatisMenu = styled.ul`
 `;
 
 export const WhatisItem = styled.li`
-  height: 80px;
+  height: 60px;
+  font-size: 20px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #262626;
+    color: #010606;
+  }
 `;
 
 export const WhatisBtn = styled.div`

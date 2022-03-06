@@ -12,10 +12,21 @@ import {
   WhatisMenu,
   WhatisBtn,
   WhatisBtnLink,
-} from "../Whatis";
+} from "./Whatis";
+import {
+  Checkbox,
+  Grid,
+  Header,
+  Icon,
+  Image,
+  Menu,
+  Segment,
+  Sidebar,
+} from "semantic-ui-react";
 
 const Whatis = ({ toggle }) => {
   const [scrollWhatis, setScrollWhatis] = useState(false);
+  const [visible, setVisible] = React.useState(true);
 
   const changeWhatis = () => {
     if (window.scrollY >= 80) {
