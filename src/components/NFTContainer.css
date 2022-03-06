@@ -1,0 +1,8 @@
+.nft-container {
+    display: grid;
+    grid-gap: 5%;
+    margin: 5%;
+    margin-top: 0%;
+    grid-template-columns: repeat(auto-fill,21.05%);
+}
+
