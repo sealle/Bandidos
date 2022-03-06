@@ -4,7 +4,7 @@ import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
   MobileIcon,
-  Whatis,
+  What,
   WhatisContainer,
   WhatisItem,
   WhatisLinks,
@@ -14,7 +14,7 @@ import {
   WhatisBtnLink,
 } from "../Whatis";
 
-const WhatisPage = ({ toggle }) => {
+const Whatis = ({ toggle }) => {
   const [scrollWhatis, setScrollWhatis] = useState(false);
 
   const changeWhatis = () => {
@@ -35,7 +35,7 @@ const WhatisPage = ({ toggle }) => {
 
   return (
     <>
-      <Whatis scrollWhatis={scrollWhatis}>
+      <What scrollWhatis={scrollWhatis}>
         <WhatisContainer>
           <WhatisMenu>
             <WhatisItem>
@@ -113,9 +113,9 @@ const WhatisPage = ({ toggle }) => {
             </WhatisItem>
           </WhatisMenu>
         </WhatisContainer>
-      </Whatis>
+      </What>
     </>
   );
 };
 
-export default WhatisPage;
+export default Whatis;

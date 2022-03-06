@@ -2,7 +2,7 @@ import { Link as LinkS } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 
-export const Whatis = styled.div`
+export const What = styled.div`
   background: linear-gradient(
     90deg,
     rgb(28, 27, 27, 0.8) 0%,

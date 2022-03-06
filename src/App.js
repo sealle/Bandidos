@@ -1,7 +1,6 @@
 import logo from "./images/Gundalf.jpg";
 import "./App.css";
 import { useState } from "react";
-import { ethers } from "ethers";
 import { NftGallery } from "react-nft-gallery";
 import Home from "./pages/index";
 import FAQ from "./pages/faq";
